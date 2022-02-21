@@ -6,9 +6,17 @@
 //e seus telefones do tipo ArrayList<Telefone> como valor
 
 
-    private HashMap<String, ArrayList<Telefone>> hashMapTelefone = new new HashMap<>();
+    private HashMap<String, ArrayList<Telefone>> hashMapTelefone;
 
-//Criar um construtor para esse atributo
+//Criar um construtor para esse atributo inicializando o mesmo, fazemos assim, por q na Main, ele cria 
+// o objeto com um construtor sem argumentos, ai criamos um construtor sem argumentos e inicializamos a lista nele.
+
+    public ListaTelefonica() {
+
+        this.hashMapTelefone = new HashMap<>();
+    }
+
+
 
 //No método adicionar telefone:
 //Vc deve criar uma Lista de telefone e nessa lista pegar o nome na hashMap
